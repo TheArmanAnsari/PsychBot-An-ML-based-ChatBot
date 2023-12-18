@@ -1,0 +1,58 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PsychBot - Your Personal Free Psychologist</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="title-container">
+            <h1>PsychBot</h1>
+            <p class="slogan">Your Personal Free Psychologist</p>
+        </div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <a href="professional-help.html">Professional Help</a>
+            <!-- Add more navigation links as needed -->
+        </nav>
+    </header>
+
+    <section id="login-section" class="login-container">
+        <h2>Login</h2>
+        <form id="login-form" onsubmit="return redirectToChatbotPage()">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" placeholder="Enter your username" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Enter your password" required>
+
+            <button type="submit">Login</button>
+        </form>
+        <div id="success-message" style="display: none; color: green; font-weight: bold; margin-top: 10px;">
+            Successfully logged in!
+        </div>
+    </section>
+
+    <section id="chatbot-section" style="display: none;">
+        <p>Chatbot coming soon...</p>
+    </section>
+
+    <section id="reviews-section">
+        <h2>Featured Reviews</h2>
+        <div class="review-container" id="review-container">
+            <!-- Dynamic user reviews will be added here -->
+        </div>
+    </section>
+
+    <footer>
+        &copy; 2023 PsychBot. All rights reserved.
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
